@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03-Set-2026 às 16:47
+-- Tempo de geração: 10-Set-2026 às 16:44
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
-
+-- Banco de dados: `sistema_produtos`
 --
 CREATE DATABASE IF NOT EXISTS `sistema_produtos` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `sistema_produtos`;
@@ -42,11 +42,12 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`id`, `nome`, `descricao`, `preco`, `quantidade`) VALUES
-(4, ' Lacreme Ao Leite', 'Tablete Lacreme Ao Leite Cacau Show', '22.00', 10),
-(5, 'LaCreme de Mezzo ', 'Tablete LaCreme de Chocolate Mezzo 100g', '19.99', 22),
+(4, ' Lacreme Ao Leite', 'Tablete Lacreme Ao Leite Cacau Show', '22.00', 8),
+(5, 'LaCreme de Mezzo ', 'Tablete LaCreme de Chocolate Mezzo 100g', '19.99', 10),
 (6, 'laCreme Branco ', 'Tablete laCreme de Chocolate Branco 100g', '20.00', 3),
 (7, 'laCreme ao Leite e Avelã', 'Tablete laCreme de Chocolate ao Leite e Avelã 100g', '22.00', 27),
-(8, 'Tablete Te Amo', 'Tablete ao Leite Chocoarte Te Amo 40g', '16.99', 4);
+(8, 'Tablete Te Amo', 'Tablete ao Leite Chocoarte Te Amo 40g', '16.99', 3),
+(9, 'LaCreme Gold de Chocolate Branco', 'Tablete laCreme Gold de Chocolate Branco 100g ', '21.99', 6);
 
 -- --------------------------------------------------------
 
@@ -93,18 +94,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- Banco de dados: `test`
---
-CREATE DATABASE IF NOT EXISTS `test` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `test`;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
