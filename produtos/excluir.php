@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <form action="excluir.php" method="POST">
         <input type="hidden" name="id" value="<?php echo $produto['id']; ?>">
         <button type="submit">Sim, excluir</button>
-        <a href="listar.php">Cancelar</a>
+        <button type="submit" formaction="listar.php">Cancelar</button>
     </form>
 </main>
 
